@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern café landing page.">
+  <title>Haven Café | Coffee • Food • Good Vibes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">HAVEN<span>CAFÉ</span></a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit Us</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">COFFEE • FOOD • GOOD VIBES</p>
+        <h1>Your daily cup of <em>comfort.</em></h1>
+        <p class="hero-text">A cozy place for great coffee, delicious food, and moments worth staying for.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">View Our Menu</a>
+          <a href="#visit" class="btn btn-outline">Find Us</a>
+        </div>
+      </div>
+      <div class="scroll-note">SCROLL TO EXPLORE ↓</div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-image image-placeholder">
+        <span>YOUR CAFÉ PHOTO</span>
+      </div>
+      <div class="about-content">
+        <p class="eyebrow">WELCOME TO HAVEN</p>
+        <h2>A little place to slow down.</h2>
+        <p>Haven Café is made for slow mornings, afternoon catch-ups, quiet work sessions, and everything in between.</p>
+        <p>We serve carefully prepared coffee, satisfying meals, and sweet treats in a warm and welcoming space.</p>
+        <div class="feature-row">
+          <div><strong>☕</strong><span>Fresh Coffee</span></div>
+          <div><strong>🥐</strong><span>Fresh Food</span></div>
+          <div><strong>♡</strong><span>Good Moments</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT'S BREWING</p>
+        <h2>Our Menu</h2>
+        <p>Simple favorites made for every kind of craving.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab active" data-category="coffee">Coffee</button>
+        <button class="tab" data-category="noncoffee">Non-Coffee</button>
+        <button class="tab" data-category="food">Food</button>
+        <button class="tab" data-category="dessert">Desserts</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-card-top"><span>☕</span><b>01</b></div>
+          <h3>Spanish Latte</h3><p>Rich espresso, milk &amp; a touch of sweetness.</p><strong>₱150</strong>
+        </article>
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-card-top"><span>☕</span><b>02</b></div>
+          <h3>Café Latte</h3><p>Espresso balanced with smooth steamed milk.</p><strong>₱140</strong>
+        </article>
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-card-top"><span>☕</span><b>03</b></div>
+          <h3>Americano</h3><p>Bold espresso with clean, refreshing notes.</p><strong>₱120</strong>
+        </article>
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-card-top"><span>☕</span><b>04</b></div>
+          <h3>Caramel Macchiato</h3><p>Espresso, creamy milk and caramel drizzle.</p><strong>₱160</strong>
+        </article>
+
+        <article class="menu-card hidden" data-category="noncoffee">
+          <div class="menu-card-top"><span>🍵</span><b>01</b></div>
+          <h3>Matcha Latte</h3><p>Creamy premium matcha with smooth milk.</p><strong>₱160</strong>
+        </article>
+        <article class="menu-card hidden" data-category="noncoffee">
+          <div class="menu-card-top"><span>🍫</span><b>02</b></div>
+          <h3>Chocolate</h3><p>Rich, creamy and comforting chocolate drink.</p><strong>₱150</strong>
+        </article>
+        <article class="menu-card hidden" data-category="noncoffee">
+          <div class="menu-card-top"><span>🫖</span><b>03</b></div>
+          <h3>Fruit Tea</h3><p>Refreshing fruit tea served chilled.</p><strong>₱130</strong>
+        </article>
+
+        <article class="menu-card hidden" data-category="food">
+          <div class="menu-card-top"><span>🍝</span><b>01</b></div>
+          <h3>Creamy Pasta</h3><p>Comforting pasta in a creamy house sauce.</p><strong>₱220</strong>
+        </article>
+        <article class="menu-card hidden" data-category="food">
+          <div class="menu-card-top"><span>🥪</span><b>02</b></div>
+          <h3>Club Sandwich</h3><p>Loaded sandwich with fresh vegetables and fries.</p><strong>₱210</strong>
+        </article>
+        <article class="menu-card hidden" data-category="food">
+          <div class="menu-card-top"><span>🍚</span><b>03</b></div>
+          <h3>Chicken Rice Bowl</h3><p>House-seasoned chicken served with rice and sides.</p><strong>₱190</strong>
+        </article>
+
+        <article class="menu-card hidden" data-category="dessert">
+          <div class="menu-card-top"><span>🍰</span><b>01</b></div>
+          <h3>Cheesecake</h3><p>Creamy cheesecake with a buttery biscuit base.</p><strong>₱170</strong>
+        </article>
+        <article class="menu-card hidden" data-category="dessert">
+          <div class="menu-card-top"><span>🍪</span><b>02</b></div>
+          <h3>Cookies</h3><p>Soft-baked cookies with chocolate chunks.</p><strong>₱100</strong>
+        </article>
+      </div>
+
+      <p class="menu-note">* Replace the sample items and prices with the café's actual menu.</p>
+    </section>
+
+    <section class="photo-strip">
+      <div class="photo-box"><span>CAFÉ PHOTO</span></div>
+      <div class="photo-box"><span>FOOD PHOTO</span></div>
+      <div class="photo-box"><span>COFFEE PHOTO</span></div>
+    </section>
+
+    <section id="visit" class="section visit">
+      <div class="section-heading">
+        <p class="eyebrow">COME SAY HELLO</p>
+        <h2>Visit Us</h2>
+        <p>Find your way to your new favorite café.</p>
+      </div>
+
+      <div class="visit-grid">
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps?q=Batangas%20City%2C%20Philippines&output=embed"
+            loading="lazy"
+            title="Google Maps location">
+          </iframe>
+        </div>
+
+        <div class="visit-info">
+          <div class="info-block">
+            <span class="info-icon">⌖</span>
+            <div><h3>Address</h3><p>123 Café Street, Batangas City, Philippines</p></div>
+          </div>
+          <div class="info-block">
+            <span class="info-icon">◷</span>
+            <div><h3>Opening Hours</h3><p>Monday–Sunday<br>9:00 AM – 9:00 PM</p></div>
+          </div>
+          <div class="info-block">
+            <span class="info-icon">☎</span>
+            <div><h3>Contact</h3><p>0912 345 6789<br>hello@havencafe.com</p></div>
+          </div>
+          <a class="btn btn-dark full" href="https://www.google.com/maps" target="_blank" rel="noopener">Open Google Maps ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="social-section">
+      <div>
+        <p class="eyebrow">STAY CONNECTED</p>
+        <h2>See what's happening at the café.</h2>
+        <p>Follow our Facebook page for announcements, new menu items, promos, and events.</p>
+      </div>
+      <a class="btn btn-light" href="https://www.facebook.com/" target="_blank" rel="noopener">Visit Facebook Page ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">HAVEN<span>CAFÉ</span></div>
+    <p>© <span id="year"></span> Haven Café. All rights reserved.</p>
+    <p>Made with ☕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
