@@ -1,10 +1,26 @@
-const menuBtn = document.querySelector(".menu-btn");
-const nav = document.querySelector(".site-header nav");
+// Mobile navigation
 
-menuBtn.addEventListener("click", () => nav.classList.toggle("open"));
+const menuButton = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".site-header nav");
 
-document.querySelectorAll("nav a").forEach(link => {
-  link.addEventListener("click", () => nav.classList.remove("open"));
-});
+if (menuButton && navigation) {
+  menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("active");
+  });
 
-document.getElementById("year").textContent = new Date().getFullYear();
+  // Close menu when clicking a link
+  navigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navigation.classList.remove("active");
+    });
+  });
+}
+
+
+// Automatically update copyright year
+
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}
