@@ -1,26 +1,38 @@
-// Mobile navigation
+/* =====================================================
+   INHINYERO TEA HOUSE
+===================================================== */
 
 const menuButton = document.querySelector(".menu-btn");
-const navigation = document.querySelector(".site-header nav");
+const navigation = document.querySelector("nav");
 
 if (menuButton && navigation) {
+
   menuButton.addEventListener("click", () => {
+
     navigation.classList.toggle("active");
+
   });
 
-  // Close menu when clicking a link
-  navigation.querySelectorAll("a").forEach((link) => {
+
+  document.querySelectorAll("nav a").forEach(link => {
+
     link.addEventListener("click", () => {
+
       navigation.classList.remove("active");
+
     });
+
   });
+
 }
 
 
-// Automatically update copyright year
+/* CURRENT YEAR */
 
-const yearElement = document.getElementById("year");
+const year = document.getElementById("year");
 
-if (yearElement) {
-  yearElement.textContent = new Date().getFullYear();
+if (year) {
+
+  year.textContent = new Date().getFullYear();
+
 }
